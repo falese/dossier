@@ -29,8 +29,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Gems for appplication
 gem "paperclip", "~> 5.0.0"
+gem 'simple_form'
 
-
+# Gems for development
+gem "annotate"
 
 
 
