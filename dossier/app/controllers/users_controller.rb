@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+require 'pry'
 
   def index
      @users = User.all
@@ -13,6 +14,7 @@ class UsersController < ApplicationController
    end
 
    def create
+     binding.pry
      @user = User.new(user_params)
      redirect_to users_path
    end
@@ -35,7 +37,7 @@ private
   end
 
   def user_params
-    params.require(:user).permit(:username, :email)
+    params.require(:user).permit(:username, :email ,:avatar)
   end
 
 end
