@@ -22,19 +22,11 @@ class AttachmentsController < ApplicationController
         redirect_to @attachment
       else
         render 'edit'
-
+      end
   end
-
-  def destroy
-
-  end
-
 private
 
-def get_attachment
-Attachment.find(params[:id])
-
-end
-
-
+  def get_attachment
+    Attachment.find(params[:id])
+  end
 end

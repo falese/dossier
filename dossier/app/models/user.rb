@@ -11,6 +11,7 @@
 #  avatar_updated_at   :datetime
 #  email               :string
 #  username            :string
+#  avatar              :string
 #
 
 class User < ActiveRecord::Base

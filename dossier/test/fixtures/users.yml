@@ -11,6 +11,7 @@
 #  avatar_updated_at   :datetime
 #  email               :string
 #  username            :string
+#  avatar              :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
