@@ -1,5 +1,6 @@
+
+
 class UsersController < ApplicationController
-require 'pry'
 
   def index
      @users = User.all
@@ -14,9 +15,13 @@ require 'pry'
    end
 
    def create
-     binding.pry
      @user = User.new(user_params)
-     redirect_to users_path
+     if @user.save
+
+       redirect_to @user
+      else
+        render :action => 'new'
+      end
    end
 
    def edit
