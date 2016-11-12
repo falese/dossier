@@ -1,3 +1,5 @@
+
+
 class UsersController < ApplicationController
 
   def index
@@ -14,7 +16,12 @@ class UsersController < ApplicationController
 
    def create
      @user = User.new(user_params)
-     redirect_to users_path
+     if @user.save
+
+       redirect_to @user
+      else
+        render :action => 'new'
+      end
    end
 
    def edit
@@ -35,7 +42,7 @@ private
   end
 
   def user_params
-    params.require(:user).permit(:username, :email)
+    params.require(:user).permit(:username, :email ,:avatar)
   end
 
 end

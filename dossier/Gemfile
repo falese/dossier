@@ -33,6 +33,7 @@ gem 'simple_form'
 
 # Gems for development
 gem "annotate"
+gem 'pry'
 
 
 
