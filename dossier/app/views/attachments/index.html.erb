@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>attachment Name</th>
+    <th>Email</th>
+  </tr>
+
+<% @attachments.each do |attachment| %>
+  <tr>
+    <td><%=link_to attachment.file_name, attachment_path(attachment)%>
+    </td>
+    <td><%=attachment.attachment_type %></td>
+  </tr>
+
+  <% end %>
+</table>
