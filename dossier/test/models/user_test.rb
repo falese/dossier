@@ -11,6 +11,7 @@
 #  avatar_updated_at   :datetime
 #  email               :string
 #  username            :string
+#  avatar              :string
 #
 
 require 'test_helper'

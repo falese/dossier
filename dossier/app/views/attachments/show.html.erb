@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>attachment Name</th>
+    <th>Email</th>
+  </tr>
+
+  <tr>
+    <td><%= @attachment.file_name %></td>
+    <td><%= @attachment.attachment_type %></td>
+  </tr>
+
+
+</table>
+<%= link_to 'Edit', edit_attachment_path(@attachment) %>

@@ -4,11 +4,12 @@
     <th>Email</th>
   </tr>
 
-<% @users.each do |user| %>
   <tr>
-    <td><%= user.username %></td>
-    <td><%= user.email %></td>
+    <td><%= @user.username %></td>
+    <td><%= @user.email %></td>
   </tr>
 
-  <% end %>
+
 </table>
+<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Add a file', new_user_attachment_path(@user, @attachment) %>

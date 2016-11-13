@@ -1,0 +1,10 @@
+<h3><strong> Details</strong></h3>
+
+
+<%= simple_form_for [@user, @attachment] do |f| %>
+  <%= f.input :attachment_type %>
+  <%= f.input :file_name, as: :file %>
+
+  <%= f.submit "Submit" %>
+
+  <% end %>
